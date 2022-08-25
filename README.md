@@ -25,7 +25,6 @@
 - **[쿼리스트링](https://www.notion.so/JSP-02-03-2a6755f7a8e44d31b6a39a61c56a0db5)**
     
     URL의 뒤에 입력 데이터를 함께 제공하는 가장 단순한 데이터 전달방법. 주로 GET방식으로 데이터를 요청할 때 쓰이는 방법.
-    ex) http://naver.com/topic?**id=3**    
 
 ---
 
@@ -33,7 +32,6 @@
 
 기본적인 요청과 응답, 화면 출력 등은 거의 웹 프로그래밍의 필수. JSP 내장객체는 요청과 응답 혹은 HTTP 헤더 등의 정보를 쉽게 다룰 수 있도록 해줌.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53a38332-db12-4525-b14e-4cd709262d98/Untitled.png)
 
 [[JSP] 내장 객체](https://velog.io/@xnfxnf97/JSP-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4)
 
@@ -164,10 +162,6 @@ public void _jspService(){
 - GET방식 전송
 - POST방식 전송
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b7ab2b44-7156-4a33-b574-66167b042c1e/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a21c67a3-6e86-4719-9b47-dea971759a17/Untitled.png)
-
 POST방식이므로 주소표시줄에 경로 외 아무것도 표시되지 않음. 때문에 쿼리스트링 null이 출력됨. 전송된 값이 한글인 경우 깨져서 출력됨. 
 ⇒ request.setCharacterEncoding("UTF-8"); 인코딩
 
@@ -266,8 +260,8 @@ while(headers.hasMoreElements()){
 
 헤더명이 더 있다면 요청 헤더의 이름을 얻어온 다음, `.getHeader( )` 메서드에 헤더명을 건네 헤더값을 얻어옴.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/97ca843d-ad61-4554-a1e1-f6e905d611bf/Untitled.png)
-
 - user-agent : 웹 브라우저의 종류를 알 수 있음. 크롬
 - referer : 웹을 서핑하면서 링크를 통해 다른 사이트로 방문 시 남는 흔적을 말함. 여기서는 기록이 남지만 **requestHeader.jsp를 직접실행하면 남지 않음.** 웹 사이트 방문객이 어떤 경로로 접속했는지 알아볼 때 유용
 - cookie : *4장. 참조
+
+**학습 도서 : <성낙현의 JSP 자바 웹 프로그래밍> - 성낙현**
