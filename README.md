@@ -1,6 +1,6 @@
 # JSP
 # 2장. 내장객체(Implicit Object)
-=> 노션에 적음(https://www.notion.so/JSP-02-03-2a6755f7a8e44d31b6a39a61c56a0db5)
+=> [노션에 적음](https://www.notion.so/JSP-02-03-2a6755f7a8e44d31b6a39a61c56a0db5)
 <aside>
 💡 개요
 
